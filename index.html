@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe Website</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hanuman&family=Noto+Sans+Khmer&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="style.css">
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+  />
+
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo" id="logo">Khmer Kitchen</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="home2.html" id="navHome" class="active">Home</a>
+        <a href="menu.html" id="navMenu">Menu</a>
+        <a href="about.html" id="navAbout">About</a>
+        <a href="contact.html" id="navContact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button id="toggleBtn" onclick="themeToggle()"></button>
+        <button id="langBtn" onclick="toggleLanguage()">KH</button>
+        <button class="hamburger"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+   <!-- Promo Banner -->
+  <section id="home" class="promo-banner">
+    <div class="promo-text">
+      <h1 id="promoTitle">The Perfect Space To Enjoy Fantastic Food</h1>
+      <p id="promoText">
+        Festive Dining At Farthings Where We Are Strong Believers In Using The Very Best Produce.
+      </p>
+      <div class="buttons">
+        <a href="menu.html" class="btn-red" id="seeMenu">See Our Menus</a>
+      </div>
+    </div>
+  </section>
+
+ <section class="featuresttt">
+<div class="containerttt">
+
+<h2 id="wharmenu">What Makes is menu</h2>
+
+<p class="subtitlettt" id="wharmenup">
+Explore our unique features that make your cooking journey seamless and fun.
+</p>
+
+<div class="feature-gridttt">
+
+<div class="feature-gridttt">
+        <div class="feature-cardttt hiddenttt">
+          <div class="iconttt"><i class="fa-solid fa-utensils"></i></div>
+          <h3 id="mainhoo">Mains</h3>
+          <p id="mainpoo">Deliciously crafted dishes, made simple and satisfying for every craving.</p>
+        </div>
+
+          <div class="feature-cardttt hiddenttt">
+            <div class="iconttt">
+            <img src="Copilot_20260616_092108.png" alt="Salad Icon">
+            </div>
+            <h3 id="saladhoo">Salad</h3>
+           <p id="saladpoo">Fresh, crisp, and full of flavor — quality greens for a healthy delight.</p>
+          </div>
+
+        <div class="feature-cardttt hiddenttt">
+          <div class="iconttt"><i class="fa-solid fa-beer-mug-empty"></i></div>
+          <h3 id="drinkhoo">Drink</h3>
+          <p id="drinkpoo">Refreshing beverages delivered fast — always chilled, always on time.</p>
+        </div>
+
+        <div class="feature-cardttt hiddenttt">
+          <div class="iconttt"><i class="fa-solid fa-cheese"></i></div>
+          <h3 id="dessertshoo">Desserts</h3>
+          <p id="ourmispdes">Sweet endings that make every meal unforgettable.</p>
+        </div>
+
+
+
+</div>
+</div>
+</section>
+
+  <!-- Popular Foods -->
+  <section class="food-section">
+    <h1 id="foodpopulear">Popular Foods</h1>
+    <div class="food-container">
+
+      <div class="food-card">
+        <img src="https://silkroadrecipes.com/wp-content/uploads/2024/08/Cambodian-Khmer-Fish-Amok-Recipe-square.jpg" alt="Fish Amok" onclick="showAlert(this.src)">
+        <div class="food-content">
+          <h2 id="cardah">Fish Amok</h2>
+          <p id="cardap">Traditional Cambodian dish with coconut curry and steamed fish.</p>
+          <div class="food-footer">
+            <span class="price">$14.99</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://i.pinimg.com/1200x/3c/bb/df/3cbbdfcd4a1a2c15eb318ce3a9a44e43.jpg" alt="Cheese Pizza" onclick="showAlert(this.src)">
+        <div class="food-content">
+          <h2 id="wwww1">Beef Lok Lak</h2>
+          <p id="www1p">Fried beef slices served on lettuce, onions, and tomatoes, usually a three-course meal.</p>
+          <div class="food-footer">
+            <span class="price">$12.99</span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="food-card">
+        <img src="https://i.pinimg.com/736x/e9/c5/15/e9c515b8de5af3abcaf8d9263e9b38d0.jpg" alt="Vegetable Pizza" onclick="showAlert(this.src)">
+        <div class="food-content">
+          <h2 id="cardch">Vegetable Pizza</h2>
+          <p id="cardcp">Loaded with fresh vegetables and herbs for a healthy bite.</p>
+          <div class="food-footer">
+            <span class="price">$11.99</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://i.pinimg.com/736x/54/29/51/5429515a0344e9135945a862357a2e2f.jpg" alt="Pepperoni Pizza" onclick="showAlert(this.src)">
+        <div class="food-content">
+          <h2 id="carddh">Pepperoni Pizza</h2>
+          <p id="carddp">Spicy pepperoni slices with gooey cheese and crispy crust.</p>
+          <div class="food-footer">
+            <span class="price">$13.99</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://i.pinimg.com/1200x/0f/fd/28/0ffd28ae66602946c6df2ccff33b08ee.jpg" alt="Seafood Pasta" onclick="showAlert(this.src)">
+        <div class="food-content">
+          <h2 id="cardfh">Seafood Pasta</h2>
+          <p id="cardfp">Fresh seafood mixed with creamy pasta and herbs.</p>
+          <div class="food-footer">
+            <span class="price">$15.99</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://i.pinimg.com/736x/e5/d6/67/e5d66743b20bf1330c4730df1cc8e50e.jpg" alt="Cheese Pizza" onclick="showAlert(this.src)">
+        <div class="food-content">
+          <h2 id="cardbh">Cheese Pizza</h2>
+          <p id="cardbp">Classic pizza topped with mozzarella and tomato sauce.</p>
+          <div class="food-footer">
+            <span class="price">$12.99</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <br><br><br><br><br>
+
+  <!-- Popular Foods -->
+  <section class="food-section">
+    <h1 id="foodour">Our food</h1>
+    <div class="food-container">
+
+
+
+      <div class="food-card">
+        <img src="https://static1.bestie.vn/Mlog/ImageContent/202203/272414165-439067724637488-5223387948774790792-n-c78a9c.gif" alt="Beef Burger" onclick="showAlert(this.src)">
+        <div class="food-content">
+          <h2 id="cardeh">Soybean Drink</h2>
+          <p id="cardep">Juicy beef patty with fresh vegetables and special sauce.</p>
+          <div class="food-footer">
+            <span class="price">$12.99</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://i.pinimg.com/1200x/0b/1e/33/0b1e33aacaeda61bcff8918b9d7a56cb.jpg" alt="Beef Burger" onclick="showAlert(this.src)">
+        <div class="food-content">
+          <h2 id="Matchalatte">Matcha latte</h2>
+          <p id="Matchalattep">Matcha Latte is a popular drink made from Japanese green tea powder (Matcha), hot water, and milk.</p>
+          <div class="food-footer">
+            <span class="price">$12.99</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://i.pinimg.com/736x/1d/cf/72/1dcf72fca6d5a4f44cc8fa3501bcd575.jpg" alt="Vegetable Pizza" onclick="showAlert(this.src)">
+        <div class="food-content">
+          <h2 id="Brown">Brown Sugar Milk Tea</h2>
+          <p id="Brownp">A sweet and creamy drink made from rich brown sugar syrup, fresh milk, and often chewy cassava pearls.</p>
+          <div class="food-footer">
+            <span class="price">$11.99</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://i.pinimg.com/1200x/01/70/df/0170dfbcd1957ddd8ab1c3342fd7bf1c.jpg" alt="Pepperoni Pizza" onclick="showAlert(this.src)">
+        <div class="food-content">
+          <h2 id="Bluebean">Blue bean dessert</h2>
+          <p id="Bluebeanp">Blue bean porridge is a traditional Khmer dish with a sweet and fragrant taste.</p>
+          <div class="food-footer">
+            <span class="price">$13.99</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="food-card">
+        <img src="https://i.pinimg.com/1200x/0f/fd/28/0ffd28ae66602946c6df2ccff33b08ee.jpg" alt="Seafood Pasta" onclick="showAlert(this.src)">
+        <div class="food-content">
+          <h2 id="bbrh">Seafood Pasta</h2>
+          <p id="bbrp">Fresh seafood mixed with creamy pasta and herbs.</p>
+          <div class="food-footer">
+            <span class="price">$15.99</span>
+          </div>
+        </div>
+      </div>
+
+            <div class="food-card">
+        <img src="https://i.pinimg.com/736x/2e/0e/de/2e0ede5f7851ccdf4e875fbff7809f7f.jpg" alt="Fish Amok" onclick="showAlert(this.src)">
+        <div class="food-content">
+          <h2 id="BaiSach">Bai Sach Chrouk</h2>
+          <p id="BaiSacp"> Rice noodles topped with fish green curry gravy, often eaten for breakfast.</p>
+          <div class="food-footer">
+            <span class="price">$14.99</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- Image Overlay Modal -->
+  <div class="modal" id="overlay">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeAlert()">&times;</button>
+      <img id="alertImg" src="" alt="Dish">
+    </div>
+  </div>
+
+<br><br><br>
+
+
+
+
+<section class="cook-about">
+    <div class="cook-container">
+
+        <!-- Left Content -->
+        <div class="cook-text">
+            <h1 id="cooktext">
+                Welcome to Our Food Shop
+            </h1>
+
+            <p id="textwww">
+                We bring you carefully prepared dishes made with love, ready to order and enjoy anytime.
+            </p>
+
+            <ul>
+                <li id="li1">Fresh ingredients, guaranteed quality.</li>
+                <li id="li2">Healthy and flavorful options.</li>
+                <li id="li3">The atmosphere in the shop is refreshing.</li>
+            </ul>
+
+            <a href="#" class="cook-btn" id="gotocontact">Go to contact</a>
+        </div>
+
+        <!-- Right Image -->
+        <div class="cook-image">
+            <img src="https://i.pinimg.com/1200x/3e/f7/de/3ef7defb0ea932a2118349e4eb01c942.jpg" alt="Team">
+        </div>
+
+    </div>
+</section>
+<br><br><br>
+
+<section>
+<div class="promo-wrapper container">
+
+    <!-- Card 1 -->
+    <div class="promo-box promo-tech">
+        <div class="promo-content">
+            <h2 id="menuus">Are You Looking<br>For Menu?</h2>
+
+            <p id="textmenu">
+                We provide the freshest and best quality food for you.
+            </p>
+
+            <a href="menu.html" class="promo-button" id="gotoabout">
+                Go to About
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="promo-icon">
+            <i class="fa-solid fa-utensils"></i>   <!-- fork & knife -->
+
+        </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="promo-box promo-contact">
+        <div class="promo-content">
+            <h2 id="contactus">Do You Want to<br>Contact Us?</h2>
+
+            <p id="textcontact">
+                Get in touch with our team and receive
+                quick support for your questions and
+                requests.
+            </p>
+
+            <a href="contact.html" class="promo-button" id="gotocontact">
+                Go to Contact
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="promo-icon">
+            <i class="fa-solid fa-house"></i>
+        </div>
+    </div>
+
+</div>
+</section>
+<br><br><br><br><br><br><br>
+
+
+<br><br>
+
+
+  <footer class="site-footer">
+  <div class="footer-columns">
+    <div class="footer-column">
+      <h3>About</h3>
+      <p>Khmer Kitchen provides traditional Cambodian food with fresh ingredients and authentic taste.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="home2.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">A bout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Working Hours</h3>
+      <p>Mon – Fri: 9:00AM – 6:00PM<br>
+         Sat: 10:00AM – 4:00PM <br>
+         Sun: Closed
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Get In Touch</h3>
+      <p>Add: New Hyde Park, NY 11040<br>
+         Email: example@info.com<br>
+         Phone: 333 666 0000</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Khmer Kitchen. All rights reserved.</p>
+  </div>
+</footer>
+<script src="js.js"></script>
+</body>
+</html>

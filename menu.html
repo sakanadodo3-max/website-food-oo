@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cambodian Food Menu</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Hanuman&family=Noto+Sans+Khmer&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#" class="logo" id="logo">Khmer Kitchen</a>
+      <nav class="nav-links" id="navLinks">
+        <a href="home2.html" id="navHome">Home</a>
+        <a href="menu.html" id="navMenu" class="active">Menu</a>
+        <a href="about.html" id="navAbout">About</a>
+        <a href="contact.html" id="navContact">Contact</a>
+      </nav>
+      <div class="actions">
+        <button id="toggleBtn" onclick="nightmode()"><i class="fas fa-moon"></i></button>
+        <button id="langBtn" onclick="toggleLanguage()">Khmer</button>
+        <button class="hamburger"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero container scroll-animate">
+    <div class="hero-content">
+      <h1 id="promoTitle">Authentic Cambodian Cuisine</h1>
+      <p id="promoText">Freshly prepared dishes inspired by Khmer tradition.</p>
+      <a href="#menue" class="btn btn-primary" id="seeMenu">Explore Menu</a>
+    </div>
+    <div class="hero-image"></div>
+  </section>
+
+    <div class="banner">
+    <div class="track">
+      <span>
+        OUR MENU • RESERVATIONS • TODAY SPECIAL • DELIVERY SERVICE • BOOK A TABLE • EVENTS •
+        OUR MENU • RESERVATIONS • TODAY SPECIAL • DELIVERY SERVICE • BOOK A TABLE • EVENTS •
+      </span>
+    </div>
+  </div>
+  <br>
+
+  <section id="menue" class="menu-section container scroll-animate">
+    <div class="menu-header">
+      <h1  id="menuTitle" class="title_1">OUR <span>STORY</span></h1>
+      <div class="controls">
+        <div class="filters">
+          <button class="chip active" data-filter="all" id="filterAll">All</button>
+          <button class="chip" data-filter="mains" id="filterMains">Mains</button>
+          <button class="chip" data-filter="salads" id="filterSalads">Salads</button>
+          <button class="chip" data-filter="drinks" id="filterDrinks">Drinks</button>
+          <button class="chip" data-filter="desserts" id="filterDesserts">Desserts</button>
+        </div>
+        <input type="text" id="searchInput" class="search" id="searchPlaceholder" placeholder="Search dishes...">
+      </div>
+    </div>
+    <div class="grid" id="menuGrid"></div>
+  </section>
+
+  <!-- Image Overlay -->
+  <div class="modal container" id="overlay">
+    <div class="modal-content">
+      <button class="modal-close" onclick="closeAlert()">&times;</button>
+      <img id="alertImg" src="" alt="Dish">
+    </div>
+  </div>
+
+  <footer class="site-footer">
+  <div class="footer-columns">
+    <div class="footer-column">
+      <h3>About</h3>
+      <p>Khmer Kitchen provides traditional Cambodian food with fresh ingredients and authentic taste.</p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Links</h3>
+      <ul>
+        <li><a href="home2.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="about.html">A bout</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-column">
+      <h3>Working Hours</h3>
+      <p>Mon – Fri: 9:00AM – 6:00PM<br>
+         Sat: 10:00AM – 4:00PM <br>
+         Sun: Closed
+      </p>
+    </div>
+
+    <div class="footer-column">
+      <h3>Get In Touch</h3>
+      <p>Add: New Hyde Park, NY 11040<br>
+         Email: example@info.com<br>
+         Phone: 333 666 0000</p>
+      <div class="social-icons">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-telegram-plane"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; <span id="year"></span> Khmer Kitchen. All rights reserved.</p>
+  </div>
+</footer>
+
+  <script src="js.js"></script>
+</body>
+</html>
